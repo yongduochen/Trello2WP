@@ -1,0 +1,34 @@
+{
+  "name": "trello2wp",
+  "version": "1.0.0",
+  "description": "Export the Trello card as a post to WordPress",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d lib -s"
+  },
+  "keywords": [
+    "trello",
+    "wordpress"
+  ],
+  "author": "CodeMeow5",
+  "license": "MIT",
+  "dependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "bluebird": "^3.5.1",
+    "config": "^1.28.1",
+    "ipaddr.js": "^1.5.4",
+    "koa": "^2.4.1",
+    "koa-better-body": "^3.0.4",
+    "koa-router": "^7.3.0",
+    "lodash": "^4.17.4",
+    "mongoose": "^4.13.3",
+    "redis": "^2.8.0",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2",
+    "wpapi": "^1.1.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
+  }
+}
