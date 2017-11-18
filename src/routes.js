@@ -6,6 +6,7 @@ const router = new Router();
 import trello from './trello';
 import wordpress from './wordpress';
 
+// Ref https://developers.trello.com/v1.0/page/webhooks#section-webhook-source
 const ipaddrs = _.map([
     '::1', // DEBUG for ngrok
     '107.23.104.115', 
@@ -21,7 +22,8 @@ router.head('/trellocallback', async ctx => {
 });
 
 router.post('/trellocallback', async ctx => {
-    // Check source IP
+    // Check source IP Ref https://stackoverflow.com/a/30904383
+    // https://github.com/whitequark/ipaddr.js
     if(_.find(ipaddrs, _.partial(_.isEqual, ipaddr.process(ctx.ip))) == undefined){
         ctx.status = 404;
         return;
