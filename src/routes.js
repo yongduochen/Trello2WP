@@ -9,6 +9,7 @@ import wordpress from './wordpress';
 // Ref https://developers.trello.com/v1.0/page/webhooks#section-webhook-source
 const ipaddrs = _.map([
     '::1', // DEBUG for ngrok
+    '127.0.0.1',
     '107.23.104.115', 
     '107.23.149.70', 
     '54.152.166.250', 
