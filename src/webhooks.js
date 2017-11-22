@@ -19,7 +19,7 @@ export default class WebHooks{
             uri: `https://api.trello.com/1/boards/${short_id}` + 
             `?fields=id&key=${this.api_key}&token=${this.api_token}`,
             json: true
-        }
+        };
         try {
             let body = await rp(options);
             return await body.id;
@@ -34,7 +34,7 @@ export default class WebHooks{
             method: 'GET',
             uri: `https://api.trello.com/1/tokens/${this.api_token}/webhooks/?key=${this.api_key}`,
             json: true
-        }
+        };
         try {
             let body = await rp(options);
             console.log(body);
@@ -50,7 +50,7 @@ export default class WebHooks{
             method: 'DELETE',
             uri: `https://api.trello.com/1/tokens/${this.api_token}/webhooks/${id}?key=${this.api_key}`,
             json: true
-        }
+        };
         try {
             let body = await rp(options);
             console.log(body);

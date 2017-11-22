@@ -14,8 +14,8 @@ const ipaddrs = _.map([
     '107.23.149.70', 
     '54.152.166.250', 
     '54.164.77.56'], ip => {
-        return ipaddr.process(ip);
-    });
+    return ipaddr.process(ip);
+});
 
 // Webhook callback
 router.head('/trellocallback', async ctx => {

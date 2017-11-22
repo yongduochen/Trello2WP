@@ -4,7 +4,9 @@
   "description": "Export the Trello card as a post to WordPress",
   "main": "index.js",
   "scripts": {
-    "build": "babel src -d lib -s"
+    "build": "babel src -d lib -s",
+    "eslint": "eslint .; exit 0",
+    "eslint-report": "eslint . -f node_modules/eslint-html-reporter/reporter.js -o eslint-report.html; exit 0"
   },
   "keywords": [
     "trello",
@@ -29,6 +31,8 @@
     "wpapi": "^1.1.2"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0"
+    "babel-cli": "^6.26.0",
+    "eslint": "^4.11.0",
+    "eslint-html-reporter": "^0.5.2"
   }
 }

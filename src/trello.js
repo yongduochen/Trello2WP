@@ -1,4 +1,3 @@
-import _ from 'lodash';
 import config from 'config';
 import rp from 'request-promise';
 
@@ -13,7 +12,7 @@ export default class Trello{
             method: 'GET',
             uri: `https://api.trello.com/1/cards/${id}?key=${api_key}&token=${api_token}`,
             json: true
-        }
+        };
         try {
             let body = await rp(options);
             return await body;
@@ -30,7 +29,7 @@ export default class Trello{
             return await {
                 'type': fields.action.type,
                 'data': card
-            }
+            };
         } else {
             return await null;
         }
