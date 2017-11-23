@@ -1,0 +1,10 @@
+{
+    "listen_port": 8001,
+    "trello_webhook_callback": "http://06db07af.ngrok.io/trellocallback",
+    "trello_api_token": "my_trello_api_token",
+    "trello_api_key": "my_trello_api_key",
+    "wp_endpoint": "http://localhost:8080/wp-json",
+    "wp_username": "codemeow",
+    "wp_password": "123456",
+    "wiki_board_short_id": "M662Cx1C"
+}

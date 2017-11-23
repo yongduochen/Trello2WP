@@ -4,6 +4,7 @@ node_modules/
 package-lock.json
 
 config/*.json
+!config/test.json
 
 .nyc_output/
 coverage.lcov
