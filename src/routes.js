@@ -9,6 +9,7 @@ import wordpress from './wordpress';
 // Ref https://developers.trello.com/v1.0/page/webhooks#section-webhook-source
 const ipaddrs = _.map([
     '::1', // DEBUG for ngrok
+    '::ffff:127.0.0.1',
     '127.0.0.1',
     '107.23.104.115', 
     '107.23.149.70', 
@@ -30,13 +31,14 @@ router.post('/trellocallback', async ctx => {
         return;
     }
 
-    console.log(ctx.request.fields);
     let action = await trello.parseHookEvent(ctx.request.fields);
     if(action != null){
         if(action.type == 'createCard'){
             await wordpress.createPost(action.data);
         }
+        ctx.status = 200;
     }
+
 });
 
 export default router;
