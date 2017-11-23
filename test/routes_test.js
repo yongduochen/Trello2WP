@@ -1,4 +1,4 @@
-import { expect } from 'Chai';
+import { expect } from 'chai';
 import rp from 'request-promise';
 import fx from 'node-fixtures';
 
@@ -33,7 +33,7 @@ describe('test routes', () => {
     it('should return status code 200 when the createCard callback is triggered.', (done) => {
         nockBack('create_card_webhook_callback.json', async (nockDone) => {
             nock.enableNetConnect('127.0.0.1');
-            
+
             let options = {
                 method: 'POST',
                 uri: 'http://127.0.0.1:8001/trellocallback',
