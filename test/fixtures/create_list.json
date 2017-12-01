@@ -1,0 +1,99 @@
+{
+    "model": {
+        "id": "5a1cb46169ea4962adbd7dea",
+        "name": "文档",
+        "desc": "",
+        "descData": null,
+        "closed": false,
+        "idOrganization": "5a0a37318f0f75757929a764",
+        "pinned": false,
+        "url": "https://trello.com/b/M662Cx1C/%E6%96%87%E6%A1%A3",
+        "shortUrl": "https://trello.com/b/M662Cx1C",
+        "prefs": {
+            "permissionLevel": "org",
+            "voting": "disabled",
+            "comments": "members",
+            "invitations": "members",
+            "selfJoin": true,
+            "cardCovers": true,
+            "cardAging": "regular",
+            "calendarFeedEnabled": false,
+            "background": "blue",
+            "backgroundImage": null,
+            "backgroundImageScaled": null,
+            "backgroundTile": false,
+            "backgroundBrightness": "dark",
+            "backgroundColor": "#0079BF",
+            "backgroundBottomColor": "#0079BF",
+            "backgroundTopColor": "#0079BF",
+            "canBePublic": true,
+            "canBeOrg": true,
+            "canBePrivate": true,
+            "canInvite": true
+        },
+        "labelNames": {
+            "green": "",
+            "yellow": "",
+            "orange": "",
+            "red": "",
+            "purple": "",
+            "blue": "",
+            "sky": "",
+            "lime": "",
+            "pink": "",
+            "black": ""
+        }
+    },
+    "action": {
+        "id": "5a16361c99a85b0953396f31",
+        "idMemberCreator": "59fdbd477df5184b55443a86",
+        "data": {
+            "board": {
+                "shortLink": "M662Cx1C",
+                "name": "文档",
+                "id": "5a0d4cc72d24744d3f676304"
+            },
+            "list": {
+                "name": "公告",
+                "id": "5a1cb46169ea4962adbd7dea"
+            },
+            "card": {
+                "shortLink": "FQTr0S7C",
+                "idShort": 42,
+                "name": "测试卡片",
+                "id": "5a16361c99a85b0953396f30"
+            }
+        },
+        "type": "createCard",
+        "date": "2017-11-23T02:44:44.077Z",
+        "display": {
+            "translationKey": "action_create_card",
+            "entities": {
+                "card": {
+                    "type": "card",
+                    "id": "5a16361c99a85b0953396f30",
+                    "shortLink": "FQTr0S7C",
+                    "text": "测试卡片"
+                },
+                "list": {
+                    "type": "list",
+                    "id": "5a0d4cd1a5fd5be92e3e1f5b",
+                    "text": "公告"
+                },
+                "memberCreator": {
+                    "type": "member",
+                    "id": "59fdbd477df5184b55443a86",
+                    "username": "codemeow",
+                    "text": "codemeow"
+                }
+            }
+        },
+        "memberCreator": {
+            "id": "59fdbd477df5184b55443a86",
+            "avatarHash": "b657147acf24c7066a32eb12e195e878",
+            "fullName": "codemeow",
+            "initials": "C",
+            "username": "codemeow"
+        }
+    }
+}

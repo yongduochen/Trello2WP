@@ -17,6 +17,7 @@ describe('test routes', () => {
     });
 
     it('should return status code 200 when using HEAD method to request /trellocallback', async () => {
+        // Allow localhost connections so we can test local routes and mock servers.
         nock.enableNetConnect('127.0.0.1');
 
         let options = {
@@ -50,6 +51,8 @@ describe('test routes', () => {
             done();
         });
     });
+
+    // it('should return status code 200
 
     it('should return status code 404 when a request for an unknown IP source is received', async () => {
         nock.enableNetConnect('127.0.0.1');

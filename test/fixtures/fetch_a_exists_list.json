@@ -2,11 +2,11 @@
     {
         "scope": "https://api.trello.com:443",
         "method": "GET",
-        "path": "/1/cards/5a0d4cfbcadcbb84f1829be5?key=my_trello_api_key&token=my_trello_api_token",
+        "path": "/1/lists/5a1cb46169ea4962adbd7dea?key=my_trello_api_key&token=my_trello_api_token",
         "body": "",
         "status": 200,
         "response": {
-            "id": "5a0d4cfbcadcbb84f1829be5",
+            "id": "5a1cb46169ea4962adbd7dea",
             "badges": {
                 "votes": 0,
                 "attachmentsByType": {
@@ -36,7 +36,7 @@
             },
             "due": null,
             "email": null,
-            "idBoard": "5a0d4cc72d24744d3f676304",
+            "idBoard": "5a1cb46169ea4962adbd7dea",
             "idChecklists": [],
             "idList": "5a1cb46169ea4962adbd7dea",
             "idMembers": [],
